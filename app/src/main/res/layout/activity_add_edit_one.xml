@@ -20,7 +20,6 @@
         android:id="@+id/btn_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="Add TDL Items"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,38 +40,31 @@
 
     <EditText
         android:id="@+id/et_Items"
-        android:layout_width="223dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="348dp"
+        android:layout_height="399dp"
         android:layout_marginTop="36dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="Item(s)"
+        android:inputType="textMultiLine"
         android:minHeight="48dp"
-        android:text="Name"
-        app:layout_constraintStart_toEndOf="@+id/tv_Items"
-        app:layout_constraintTop_toBottomOf="@+id/et_List" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_List"
+        android:gravity="top|left"/>
 
     <TextView
         android:id="@+id/tv_List"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="75dp"
+        android:layout_height="34dp"
         android:text="List:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tv_Items"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        android:text="Item(s):"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_List" />
 
     <Button
         android:id="@+id/btn_ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
         android:text="OK"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -81,17 +73,17 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lv_templates2"
-        android:layout_width="267dp"
-        android:layout_height="364dp"
+        android:layout_width="340dp"
+        android:layout_height="123dp"
+        android:isScrollContainer="true"
+        app:layout_constraintBottom_toTopOf="@+id/btn_delete"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_Items" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:text="DELETE"
         app:layout_constraintBottom_toTopOf="@+id/btn_ok"
         app:layout_constraintEnd_toEndOf="parent"
