@@ -69,7 +69,7 @@ public class AddEditOne extends AppCompatActivity {
         item=intent.getStringExtra("item");
         TDLs tdL=null;
 
-        if (id>=55) {
+        if (id>=1) {
             id2=id;
             //edit TDL
             for(TDLs t: everything) {
@@ -89,7 +89,7 @@ public class AddEditOne extends AppCompatActivity {
 
         btn_ok.setOnClickListener((view) -> {
 
-            if (id >= 55) {
+            if (id >= 1) {
                 //update
 
                 String et_ItemsTXT=et_Items.getText().toString();
