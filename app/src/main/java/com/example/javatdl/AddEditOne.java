@@ -157,7 +157,7 @@ public class AddEditOne extends AppCompatActivity {
                     et_Items.setText(tdL.getItems() + myApplication.getNewItem() + "\n");
                     tdL.setItems(tdL.getItems() + myApplication.getNewItem() + "\n");
 
-                    Toast.makeText(AddEditOne.this, "add works", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddEditOne.this, "Add Works", Toast.LENGTH_SHORT).show();
             }
         });
 
